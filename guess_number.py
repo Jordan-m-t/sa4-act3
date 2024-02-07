@@ -2,10 +2,10 @@ number = 10
 max_guesses = 3
 current_guess = 0
 
-print("I'm thinking of a number, from 1 to 50...")
+print("I'm thinking of a number...")
 
 while current_guess < max_guesses:
-    guess_input = input(f"What number am I thinking of? (Enter 'q' to quit) Number of guesses left --{max_guesses - current_guess}--: ")
+    guess_input = input(f"What number am I thinking of? (Enter 'q' to quit) You have {max_guesses - current_guess} guesses left: ")
     
     if guess_input.lower() == 'q':
         print(f"The number was {number}.")
